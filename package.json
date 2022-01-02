@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "parcel-bundler": "^1.12.5"
+  },
+  "name": "tehnomart",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html --public-url /Tehnomart --no-content-hash",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
