@@ -12,7 +12,7 @@
 
         <div class="headline">
 
-          <button type="button">ТЕХНОМАРТ</button>
+          <a href="./index.html">ТЕХНОМАРТ</a>
 
           <div class="head-search">
             <div class="head-search-icon">
@@ -49,13 +49,11 @@
 
         <div class="head-content">
 
-          <div class="head-content-about">
-            <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
-          </div>
+          <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
 
           <div class="head-content-contacts">
-            <button type="button" id="head-contact-button">+7 800 555-86-28</button>
-            <label for="head-contact-button">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</label>
+            <a href="tel:+78005558628">+7 800 555-86-28</a>
+            <label>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</label>
           </div>
 
           <button type="button"><img src="https://via.placeholder.com/17x17" alt="">Войти</button>
@@ -70,13 +68,13 @@
         <div class="head-bottom-nav">
           <nav>
             <ul>
-              <li>Главная</li>
-              <li>Компания</li>
-              <li>Каталог</li>
-              <li>Новости</li>
-              <li>Спецпредложения</li>
-              <li>Доставка</li>
-              <li>Контакты</li>
+              <li><a>Главная</a></li>
+              <li><a>Компания</a></li>
+              <li><a>Каталог</a></li>
+              <li><a>Новости</a></li>
+              <li><a>Спецпредложения</a></li>
+              <li><a>Доставка</a></li>
+              <li><a>Контакты</a></li>
             </ul>
           </nav>
         </div>
@@ -88,6 +86,7 @@
     <main>
 
       <section>
+        <h2 hidden>Каталог</h2>
         <div class="main-catalog-container">
 
           <div class="main-catalog">
@@ -139,7 +138,7 @@
                 <div class="main-catalog-bigItem-slogan">Настоящие мужские игрушки</div>
               </div>
 
-              <button class="main-catalog-bigItem-button">ОТКРЫТЬ КАТАЛОГ</button>
+              <a href="#">ОТКРЫТЬ КАТАЛОГ</a>
               <button type="button" class="main-catalog-bigItem-previousButton"></button>
               <button type="button" class="main-catalog-bigItem-nextButton"></button>
               <a class="main-catalog-bigItem-previousSlide"></a>
@@ -152,43 +151,53 @@
       </section>
 
       <section>
+        <h2 hidden>Популярные товары</h2>
         <div class="main-popularProducts-container">
 
           <div class="main-popularProducts">
 
             <div class="main-popularProducts-head">
               <p>ПОПУЛЯРНЫЕ ТОВАРЫ:</p>
-              <button>ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</button>
+              <a href="#">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
             </div>
 
             <div class="main-popularProducts-items-container">
 
-              <ul class="main-popularProducts-items">
-                <li>
+              <div class="main-popularProducts-item">
+                <a href="#">
                   <img src="https://via.placeholder.com/184x164" alt="">
                   <label class="main-popularProducts-items-name">Перфоратор BOSH BFG 9000</label>
                   <label class="main-popularProducts-items-previosPrice">32500 Р.</label>
-                  <button type="button" class="main-popularProducts-items-currentPrice">25500 Р.</button>
-                </li>
-                <li>
+                  <label class="main-popularProducts-items-currentPrice">25500 Р.</label>
+                </a>
+              </div>
+
+              <div class="main-popularProducts-item">
+                <a href="#">
                   <img src="https://via.placeholder.com/127x112" alt="">
                   <label class="main-popularProducts-items-name">Перфоратор BOSH BFG 3000</label>
                   <label class="main-popularProducts-items-previosPrice">22500 Р.</label>
-                  <button type="button" class="main-popularProducts-items-currentPrice">15500 Р.</button>
-                </li>
-                <li>
+                  <label class="main-popularProducts-items-currentPrice">15500 Р.</label>
+                </a>
+              </div>
+
+              <div class="main-popularProducts-item">
+                <a href="#">
                   <img src="https://via.placeholder.com/144x128" alt="">
                   <label class="main-popularProducts-items-name">Перфоратор BOSH BFG 6000</label>
                   <label class="main-popularProducts-items-previosPrice">30500 Р.</label>
-                  <button type="button" class="main-popularProducts-items-currentPrice">25500 Р.</button>
-                </li>
-                <li>
+                  <label class="main-popularProducts-items-currentPrice">25500 Р.</label>
+                </a>
+              </div>
+
+              <div class="main-popularProducts-item">
+                <a href="#">
                   <img src="https://via.placeholder.com/127x112" alt="">
                   <label class="main-popularProducts-items-name">Перфоратор BOSH BFG 2000</label>
                   <label class="main-popularProducts-items-previosPrice">22500 Р.</label>
-                  <button type="button" class="main-popularProducts-items-currentPrice">12500 Р.</button>
-                </li>
-              </ul>
+                  <label class="main-popularProducts-items-currentPrice">12500 Р.</label>
+                </a>
+              </div>
 
             </div>
 
@@ -198,27 +207,42 @@
       </section>
 
       <section>
+        <h2 hidden>Популярные производители</h2>
         <div class="main-popularManufactures-container">
 
           <div class="main-popularManufactures">
 
             <div class="main-popularManufactures-head">
               <p>ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</p>
-              <button>ВСЕ ПРОИЗВОДИТЕЛИ</button>
+              <a href="#">ВСЕ ПРОИЗВОДИТЕЛИ</a>
             </div>
 
             <div class="main-popularManufactures-list-container">
 
-              <ul class="main-popularManufactures-list">
-                <li><img src="https://via.placeholder.com/126x37" alt=""></li>
-                <li><img src="https://via.placeholder.com/123x40" alt=""></li>
-                <li><img src="https://via.placeholder.com/146x44" alt=""></li>
-                <li><img src="https://via.placeholder.com/200x75" alt=""></li>
-                <li><img src="https://via.placeholder.com/169x31" alt=""></li>
-                <li><img src="https://via.placeholder.com/121x73" alt=""></li>
-                <li><img src="https://via.placeholder.com/151x96" alt=""></li>
-                <li><img src="https://via.placeholder.com/204x69" alt=""></li>
-              </ul>
+              <div class="main-popularManufactures-listItem">
+                <a href="#"><img src="https://via.placeholder.com/126x37"></a>
+              </div>
+              <div class="main-popularManufactures-listItem">
+                <a href="#"><img src="https://via.placeholder.com/123x40"></a>
+              </div>
+              <div class="main-popularManufactures-listItem">
+                <a href="#"><img src="https://via.placeholder.com/146x44"></a>
+              </div>
+              <div class="main-popularManufactures-listItem">
+                <a href="#"><img src="https://via.placeholder.com/200x75"></a>
+              </div>
+              <div class="main-popularManufactures-listItem">
+                <a href="#"><img src="https://via.placeholder.com/169x31"></a>
+              </div>
+              <div class="main-popularManufactures-listItem">
+                <a href="#"><img src="https://via.placeholder.com/121x73"></a>
+              </div>
+              <div class="main-popularManufactures-listItem">
+                <a href="#"><img src="https://via.placeholder.com/151x96"></a>
+              </div>
+              <div class="main-popularManufactures-listItem">
+                <a href="#"><img src="https://via.placeholder.com/204x69"></a>
+              </div>
 
             </div>
 
@@ -228,13 +252,14 @@
       </section>
 
       <section>
+        <h2 hidden>Сервисы</h2>
         <div class="main-services-container">
 
           <div class="main-services">
 
             <div class="main-services-head">
-              <p>СЕРВИСЫ</p>
-              <p>Хороший интернет-магазин отличается от плохого не только ценами!
+              <p>СЕРВИСЫ<br>
+                Хороший интернет-магазин отличается от плохого не только ценами!
                 Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
               </p>
             </div>
@@ -250,8 +275,8 @@
               </div>
 
               <div class="main-services-body-serviceInfo">
-                <p>ДОСТАВКА</p>
-                <p>Мы с удовольствием доставим ваш товар прямо
+                <p>ДОСТАВКА<br>
+                  Мы с удовольствием доставим ваш товар прямо
                   к вашему подъезду совершенно бесплатно!
                   Ведь мы неплохо заработаем,
                   поднимая его на ваш этаж!
@@ -270,13 +295,14 @@
       </section>
 
       <section>
+        <h2 hidden>О компании</h2>
         <div class="main-companyInfo-container">
 
           <div class="main-companyInfo">
 
             <div class="main-companyInfo-body">
-              <p>КОМПАНИЯ «ТЕХНОМАРТ»</p>
-              <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
+              <p>КОМПАНИЯ «ТЕХНОМАРТ»<br>
+                Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
                 Мы можем доставить ваш товар в самые отдаленные точки России!
                 Техномарт работает со многими транспортными компаниями:
               </p>
@@ -285,16 +311,15 @@
                 <li>Автотрейдинг</li>
                 <li>ЖелДорЭкспедиция</li>
               </ul>
-              <button>ПОДРОБНЕЕ О КОМПАНИИ</button>
+              <a href="#">ПОДРОБНЕЕ О КОМПАНИИ</a>
             </div>
 
             <div class="main-companyInfo-contacts">
-              <p>КОНТАКТЫ</p>
-              <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-              <section>
+              <p>КОНТАКТЫ<br>
+                Вы можете забрать товар сами, заехав в наш офис:
                 <img src="https://via.placeholder.com/300x158" alt="">
-              </section>
-              <a href="./Feedback.html"><button>ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</button></a>
+                <a href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
+              </p>
             </div>
 
           </div>
@@ -309,19 +334,19 @@
       <div class="mainfooter-container">
 
         <div class="mainfooter">
-          <button type="button" id="mainfooter-button">ТЕХНОМАРТ</button>
-          <label for="mainfooter-button">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П +7 800 555-86-28</label>
+          <a href="#">ТЕХНОМАРТ</a>
+          <label>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П +7 800 555-86-28</label>
           <nav>
             <ul>
-              <li>Компания</li>
-              <li>Новости</li>
-              <li>Каталог</li>
-              <li>Доставка</li>
-              <li>Контакты</li>
-              <li>Материалы</li>
-              <li>Техника</li>
-              <li>Инструмент</li>
-              <li>Спецпредложения</li>
+              <li><a>Компания</a></li>
+              <li><a>Новости</a></li>
+              <li><a>Каталог</a></li>
+              <li><a>Доставка</a></li>
+              <li><a>Контакты</a></li>
+              <li><a>Материалы</a></li>
+              <li><a>Техника</a></li>
+              <li><a>Инструмент</a></li>
+              <li><a>Спецпредложения</a></li>
             </ul>
           </nav>
         </div>
@@ -333,9 +358,9 @@
         <div class="subfooter">
           <p>© 2010–2021 Компания «Техномарт» Все права защищены</p>
           <ul class="subfooter-social-networks">
-            <li><button><img src="https://via.placeholder.com/26x15" alt=""></button></li>
-            <li><button><img src="https://via.placeholder.com/12x22" alt=""></button></li>
-            <li><button><img src="https://via.placeholder.com/21x21" alt=""></button></li>
+            <li><a><img src="https://via.placeholder.com/26x15" alt=""></a></li>
+            <li><a><img src="https://via.placeholder.com/12x22" alt=""></a></li>
+            <li><a><img src="https://via.placeholder.com/21x21" alt=""></a></li>
           </ul>
 
           <div class="subfooter-feedback">
