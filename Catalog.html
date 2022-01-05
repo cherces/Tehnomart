@@ -104,9 +104,13 @@
             <fieldset>
               <legend>Цена:</legend>
 
-              <div>
-                <!--здесь будет ползунок -->
-              </div>
+              <form method="post" action="#">
+                <input type="range" id="priceSlider" name="catalog-filter-priceSlaider" min="0" max="30000" step="100">
+                <p>
+                  <label>От <input type="text" value="0"></label>
+                  <label>До <input type="text" value="30000"></label>
+                </p>
+              </form>
             </fieldset>
 
             <fieldset>
