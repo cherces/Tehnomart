@@ -1,0 +1,130 @@
+/* Variables */
+
+:root {
+  --basic-red: #EE3643;
+  --basic-green: #63A63E;
+  --basic-grey: #3D546F;
+  --basic-greylight: #C5C5C5;
+  --basic-extragrey: #293449;
+  --basic-white: #FFFFFF;
+  --basic-black: #000000;
+
+  --basic-backgound: #F1F5F7;
+
+  --special-yellow: #FFBF47;
+
+  --success: #5FBB2D;
+  --error: #BA2732;
+}
+
+/* Global */
+
+.page-body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "Cuprum", "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-black);
+  background-color: var(--basic-backgound);
+}
+
+a {
+  text-decoration: none;
+  color: var(--basic-white);
+}
+button {
+  background-color: var(--basic-red);
+  border: none;
+}
+.main-header {
+  background-color: var(--basic-backgound);
+}
+.main-catalog-bigItem img,
+.main-popularProducts-items-container img,
+.main-popularManufactures-list-container img {
+  max-width: 100%;
+  height: auto;
+}
+.headline {
+  background-color: var(--basic-grey);
+}
+.head-search input {
+  background-color: inherit;
+  border: none;
+}
+.checkout {
+  background-color: var(--basic-green);
+}
+.head-content h1 {
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--basic-red);
+}
+.head-content-contacts a {
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--basic-red);
+  border: 2px solid var(--basic-white);
+}
+.head-content-contacts p {
+  color: var(--basic-grey);
+}
+.head-content button {
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  border: none;
+}
+.head-bottom-nav-container {
+  background-color: var(--basic-grey);
+}
+.head-bottom-nav-container ul {
+  list-style: none;
+}
+.section-catalog-item-name {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--basic-white);
+}
+.section-catalog-item button {
+  background-color: rgba(255,255,255, 0.3);
+  border: none;
+}
+.section-catalog-item a {
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+.section-catalog-materials {
+  background-color: var(--special-yellow);
+}
+.section-catalog-tools {
+  background-color: #3BBCE3;
+}
+.section-catalog-technics {
+  background-color: #DC91D8;
+}
+.section-catalog-discount {
+  background-color: #8ED78F;
+}
+.section-catalog-delivery {
+  background-color: var(--special-yellow);
+}
+.section-catalog-bigItem {
+  color: var(--basic-white);
+}
+.section-catalog-bigItem-name {
+  font-size: 36px;
+  line-height: 36px;
+}
+.section-catalog-bigItem-slogan {
+  font-size: 18px;
+}
+.section-catalog-bigItem button {
+  line-height: 18px;
+}
