@@ -9,8 +9,6 @@
   --basic-white: #FFFFFF;
   --basic-black: #000000;
 
-  --basic-backgound: #F1F5F7;
-
   --special-yellow: #FFBF47;
 
   --success: #5FBB2D;
@@ -28,7 +26,7 @@
   line-height: 24px;
   font-weight: 400;
   color: var(--basic-black);
-  background-color: var(--basic-backgound);
+  background-color: var(--basic-white);
 }
 
 a {
@@ -40,7 +38,7 @@ button {
   border: none;
 }
 .main-header {
-  background-color: var(--basic-backgound);
+  background-color: #F1F5F7;
 }
 .main-catalog-bigItem img,
 .main-popularProducts-items-container img,
@@ -85,46 +83,131 @@ button {
 .head-bottom-nav-container ul {
   list-style: none;
 }
-.section-catalog-item-name {
+.main-catalog-item-name {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
   color: var(--basic-white);
 }
-.section-catalog-item button {
+.main-catalog-item button {
   background-color: rgba(255,255,255, 0.3);
   border: none;
 }
-.section-catalog-item a {
+.main-catalog-item a {
   line-height: 18px;
   text-transform: uppercase;
   color: var(--basic-black);
 }
-.section-catalog-materials {
+.main-catalog-materials {
   background-color: var(--special-yellow);
 }
-.section-catalog-tools {
+.main-catalog-tools {
   background-color: #3BBCE3;
 }
-.section-catalog-technics {
+.main-catalog-technics {
   background-color: #DC91D8;
 }
-.section-catalog-discount {
+.main-catalog-discount {
   background-color: #8ED78F;
 }
-.section-catalog-delivery {
+.main-catalog-delivery {
   background-color: var(--special-yellow);
 }
-.section-catalog-bigItem {
+.main-catalog-bigItem {
   color: var(--basic-white);
 }
-.section-catalog-bigItem-name {
+.main-catalog-bigItem-name {
   font-size: 36px;
   line-height: 36px;
 }
-.section-catalog-bigItem-slogan {
+.main-catalog-bigItem-slogan {
   font-size: 18px;
 }
-.section-catalog-bigItem button {
+.main-catalog-bigItem button {
   line-height: 18px;
+}
+.main-popularProducts-head,
+.main-popularManufactures-head {
+  background-color: #F9F5F0;
+}
+.main-popularProducts-head h3,
+.main-popularManufactures-head h3,
+.main-services-head h3,
+.main-companyInfo-body h3,
+.main-companyInfo-contacts h3 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.main-popularProducts-head button,
+.main-popularManufactures-head button,
+.main-companyInfo-body button,
+.main-companyInfo-contacts button {
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.main-popularProducts-items ul,
+.main-popularManufactures ul,
+.main-services-body-servicesList ul,
+.mainfooter ul,
+.subfooter ul {
+  list-style: none;
+}
+.main-popularProducts-items-list li {
+  border: 1px solid #EAEAEA;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.main-popularProducts-items-name {
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--basic-black);
+}
+.main-popularProducts-items-previosPrice {
+  font-size: 17px;
+  line-height: 18px;
+  text-decoration: line-through;
+  color: #A9A9A9;
+}
+.main-popularProducts-items-currentPrice {
+  font-size: 17px;
+  line-height: 18px;
+}
+.main-popularManufactures-items-list li {
+  border: 1px solid #EAEAEA;
+}
+.main-services-container {
+  background-color: #F1F5F7;
+}
+.main-services-head p {
+  font-size: 13px;
+  line-height: 24px;
+}
+.main-services-body-servicesList li {
+  background-color: #32425C;
+}
+.main-companyInfo-body,
+.main-companyInfo-contacts {
+  color: var(--basic-black);
+}
+.main-companyInfo-body p,
+.main-companyInfo-contacts p {
+  font-family: "PT Sans";
+  font-size: 13px;
+  line-height: 24px;
+}
+.mainfooter {
+  background-color: var(--basic-grey);
+}
+.mainfooter p {
+  color: #F3F7F9;
+}
+.subfooter-container {
+  background-color: var(--basic-extragrey);
+}
+.subfooter-container p {
+  color: var(--basic-white);
+}
+.subfooter-social-networks li {
+  background-color: #212A3A;
 }
