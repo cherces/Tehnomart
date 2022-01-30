@@ -29,11 +29,149 @@
   background-color: var(--basic-white);
 }
 
+.simple-title {
+  font-size: 30px;
+  line-height: 30px;
+
+  color: var(--basic-black);
+}
+.simple-button {
+  font-size: 14px;
+  line-height: 18px;
+
+  text-transform: uppercase;
+
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+.simple-list {
+  list-style: none;
+}
+.simple-link {
+  text-decoration: none;
+}
 
 
 
 
+/*  HEADLINE  */
 
+.main-header {
+  background-color: #F1F5F7;
+}
+.headline-container {
+  background-color: var(--basic-extragrey);
+}
+.headline a {
+  color: var(--basic-white);
+}
+.headline svg {
+  fill: rgba(255, 255, 255, 0.5);
+}
+.headline input {
+  border: none;
+
+  background-color: var(--basic-extragrey);
+}
+.head-search input::placeholder {
+  color: var(--basic-white);
+}
+
+.logo-button:active {
+  background-color: var(--error);
+}
+.head-search input:focus {
+  background-color: var(--basic-white);
+
+}
+.head-search input:focus .head-search-icon {
+  fill: var(--basic-red);
+}
+.head-search:hover svg,
+.head-bookmarks:hover svg,
+.head-cart:hover svg {
+  fill: var(--basic-white);
+}
+.head-bookmarks:active,
+.head-cart:active {
+  background-color: #161D29;
+}
+.checkout {
+  background-color: var(--basic-green);
+}
+.checkout:hover {
+  background-color: var(--success);
+}
+.checkout:active a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+/*  HEAD  */
+.head h1 {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+
+  color: var(--basic-red);
+}
+.head-contacts a {
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: bold;
+
+  border: 3px solid var(--basic-white);
+
+  color: var(--basic-red);
+}
+.head-contacts p {
+  font-size: 14px;
+  line-height: 24px;
+
+  color: #32425C;
+}
+.head-signin-button,
+.head-registration-button {
+  font-size: 21px;
+  line-height: 21px;
+
+  border: none;
+
+  background-color: var(--basic-white);
+}
+.head-signin-icon {
+  fill: #C5C5C5;
+}
+.head-nav-container {
+  background-color: var(--basic-grey);
+}
+.head-nav ul li a {
+  color: var(--basic-white);
+}
+
+.head-signin-button:hover,
+.head-registration-button:hover {
+  color: var(--basic-red);
+}
+.head-signin-button:hover .head-signin-icon {
+  fill: var(--basic-grey);
+}
+.head-signin-button:active,
+.head-registration-button:active {
+  color: var(--basic-greylight);
+  background: rgba(0, 0, 0, 0.0001);
+}
+.head-signin-button:active .head-signin-icon {
+  fill: #C5C5C5;
+}
+.head-nav ul li:hover {
+  background-color: #293449;
+}
+.head-nav ul li:active a {
+  opacity: 0.5;
+  background-color: #1D2739;
+}
 
 
 
