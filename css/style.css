@@ -348,6 +348,7 @@
 
 
 /* POPULAR MANUFACTURES */
+
 .main-popularManufactures-head {
   background-color: #F9F5F0;
 }
@@ -380,213 +381,111 @@
 }
 
 
+/*  SERVICES  */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-a {
-  text-decoration: none;
-  color: var(--basic-white);
-}
-button {
-  background-color: var(--basic-red);
-  border: none;
-}
-
-
-.main-header {
-  background-color: #F1F5F7;
-}
-.headline {
-  background-color: var(--basic-grey);
-}
-.head-search input {
-  background-color: inherit;
-  border: none;
-}
-.checkout {
-  background-color: var(--basic-green);
-}
-.head-content h1 {
-  font-size: 16px;
-  line-height: 23px;
-  color: var(--basic-red);
-}
-.head-content-contacts a {
-  font-size: 21px;
-  line-height: 30px;
-  color: var(--basic-red);
-  border: 2px solid var(--basic-white);
-}
-.head-content-contacts p {
-  color: var(--basic-grey);
-}
-.head-content button {
-  font-size: 21px;
-  line-height: 21px;
-  color: var(--basic-black);
-  background-color: var(--basic-white);
-  border: none;
-}
-.head-bottom-nav-container {
-  background-color: var(--basic-grey);
-}
-.head-bottom-nav-container ul {
-  list-style: none;
-}
-
-
-
-.main-catalog-bigItem img,
-.main-popularProducts-items-container img,
-.main-popularManufactures-list-container img {
-  max-width: 100%;
-  height: auto;
-}
-.main-catalog-item-name {
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 700;
-  color: var(--basic-white);
-}
-.main-catalog-item button {
-  background-color: rgba(255,255,255, 0.3);
-  border: none;
-}
-.main-catalog-item a {
-  line-height: 18px;
-  text-transform: uppercase;
-  color: var(--basic-black);
-}
-.main-catalog-materials {
-  background-color: var(--special-yellow);
-}
-.main-catalog-tools {
-  background-color: #3BBCE3;
-}
-.main-catalog-technics {
-  background-color: #DC91D8;
-}
-.main-catalog-discount {
-  background-color: #8ED78F;
-}
-.main-catalog-delivery {
-  background-color: var(--special-yellow);
-}
-.main-catalog-bigItem {
-  color: var(--basic-white);
-}
-.main-catalog-bigItem-name {
-  font-size: 36px;
-  line-height: 36px;
-}
-.main-catalog-bigItem-slogan {
-  font-size: 18px;
-}
-.main-catalog-bigItem button {
-  line-height: 18px;
-}
-.main-popularProducts-head,
-.main-popularManufactures-head {
-  background-color: #F9F5F0;
-}
-.main-popularProducts-head h3,
-.main-popularManufactures-head h3,
-.main-services-head h3,
-.main-companyInfo-body h3,
-.main-companyInfo-contacts h3 {
-  font-size: 30px;
-  line-height: 30px;
-  text-transform: uppercase;
-}
-.main-popularProducts-head button,
-.main-popularManufactures-head button,
-.main-companyInfo-body button,
-.main-companyInfo-contacts button {
-  line-height: 18px;
-  text-transform: uppercase;
-}
-.main-popularProducts-items ul,
-.main-popularManufactures ul,
-.main-services-body-servicesList ul,
-.mainfooter ul,
-.subfooter ul {
-  list-style: none;
-}
-.main-popularProducts-items-list li {
-  border: 1px solid #EAEAEA;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.main-popularProducts-items-name {
-  font-size: 18px;
-  line-height: 20px;
-  color: var(--basic-black);
-}
-.main-popularProducts-items-previosPrice {
-  font-size: 17px;
-  line-height: 18px;
-  text-decoration: line-through;
-  color: #A9A9A9;
-}
-.main-popularProducts-items-currentPrice {
-  font-size: 17px;
-  line-height: 18px;
-}
-.main-popularManufactures-items-list li {
-  border: 1px solid #EAEAEA;
-}
 .main-services-container {
   background-color: #F1F5F7;
 }
-.main-services-head p {
+.main-services-head p,
+.main-services-body-serviceInfo p {
+  font-family: "PT Sans";
   font-size: 13px;
   line-height: 24px;
 }
-.main-services-body-servicesList li {
+.main-services-body-servicesList-item input {
+  display: none;
+}
+.main-services-body-servicesList-item label {
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: bold;
+
   background-color: #32425C;
+  color: var(--basic-white);
 }
-.main-companyInfo-body,
-.main-companyInfo-contacts {
-  color: var(--basic-black);
+
+.main-services-body-servicesList-item input:hover + label {
+  background-color: #293449;
 }
+.main-services-body-servicesList-item input:checked + label {
+  color: #32425C;
+  background-color: var(--basic-white);
+}
+
+
+
+/*  COMPANY INFO  */
+
 .main-companyInfo-body p,
 .main-companyInfo-contacts p {
   font-family: "PT Sans";
   font-size: 13px;
   line-height: 24px;
 }
+.main-companyInfo-body-partners-item::before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 2px;
 
 
+  margin-left: -35px;
+  margin-top: 13px;
 
-.mainfooter {
-  background-color: var(--basic-grey);
+
+  background-color: #EE3643;
 }
-.mainfooter p {
-  color: #F3F7F9;
-}
-.subfooter-container {
-  background-color: var(--basic-extragrey);
-}
-.subfooter-container p {
+.main-companyInfo-body button a,
+.main-companyInfo-contacts button a {
   color: var(--basic-white);
 }
-.subfooter-social-networks li {
+
+
+
+/*  FOOTER  */
+
+.top-footer {
+  background-color: #32425C;
+}
+.top-footer p {
+  color: var(--basic-white);
+}
+.footer-site-navigation li:nth-child(n + 6) a {
+  color: #FFD180;
+}
+.footer-site-navigation li a {
+  color: var(--basic-white);
+}
+
+.bottom-footer {
+  background-color: var(--basic-extragrey);
+}
+.bottom-footer-social-networks-item {
   background-color: #212A3A;
 }
-*/
+.bottom-footer p {
+  font-size: 16px;
+  line-height: 18px;
+
+  color: var(--basic-white);
+}
+.bottom-footer-feedback a,
+.bottom-footer-developed a {
+  color: #FFD180;
+}
+
+.footer-site-navigation li:hover a,
+.bottom-footer-feedback:hover a,
+.bottom-footer-developed:hover a {
+  text-decoration: underline;
+}
+.footer-site-navigation li:active {
+  opacity: 0.5;
+}
+.bottom-footer-social-networks-item:hover {
+  background-color: var(--basic-red);
+}
+.bottom-footer-feedback:active a,
+.bottom-footer-developed:active a {
+  color: var(--basic-red);
+}
