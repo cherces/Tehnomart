@@ -68,6 +68,9 @@
 .headline svg {
   fill: rgba(255, 255, 255, 0.5);
 }
+.logo-button {
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+}
 .headline input {
   border: none;
 
@@ -109,6 +112,7 @@
 
 
 /*  HEAD  */
+
 .head h1 {
   font-style: italic;
   font-size: 16px;
@@ -174,12 +178,206 @@
 }
 
 
+/*  CATALOG  */
+
+.main-catalog-item-name {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+
+  color: var(--basic-white);
+}
+.main-catalog-item-button {
+  border: none;
+
+  opacity: 0.3;
+}
+.main-catalog-item-button a {
+  font-size: 14px;
+  line-height: 18px;
+
+  text-transform: uppercase;
+  color: var(--basic-white);
+
+}
+.main-catalog-materials {
+  background-color: var(--special-yellow);
+}
+.main-catalog-tools {
+  background-color: #3BBCE3;
+}
+.main-catalog-technics {
+  background-color: #DC91D8;
+}
+.main-catalog-discount {
+  background-color: #8ED78F;
+}
+.main-catalog-delivery {
+  background-color: var(--special-yellow);
+}
+.main-catalog-bigItem {
+  background-color: var(--basic-greylight);
+}
+.main-catalog-bigItem-name {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+
+  text-transform: uppercase;
+
+  color: var(--basic-white);
+}
+.main-catalog-bigItem-slogan {
+  color: var(--basic-white);
+}
+.main-catalog-bigItem-button a {
+  font-size: 14px;
+  line-height: 18px;
+
+  color: var(--basic-white);
+}
+
+.main-catalog-item-button:hover {
+  background-color: var(--basic-greylight);
+}
+.main-catalog-item-button:active {
+  background-color: #A9A9A9;
+}
+.main-catalog-bigItem-button:hover {
+  background-color: #CA2C37;
+}
+.main-catalog-bigItem-button:active {
+  background-color: #BA2732;
+}
 
 
 
+/*  POPULAR PRODUCTS */
+
+.main-popularProducts-head {
+  background-color: #F9F5F0;
+}
+.main-popularProducts-head h3 {
+  font-size: 30px;
+  line-height: 30px;
+
+  text-transform: uppercase;
+
+  color: #32425C;
+}
+.main-popularProducts-head button a {
+  font-size: 14px;
+  line-height: 18px;
+
+  text-transform: uppercase;
+
+  color: var(--basic-white);
+}
+.main-popularProducts-item {
+  border: 1px solid #EAEAEA;
+}
+.main-popularProducts-item-name {
+  font-family: "PT Sans";
+  line-height: 20px;
+  font-weight: bold;
+
+  color: var(--basic-black);
+}
+.main-popularProducts-item-previosPrice {
+  font-family: "PT Sans";
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+
+  text-decoration: line-through;
+
+  color: #A9A9A9;
+}
+.main-popularProducts-item .price-button {
+  font-family: "PT Sans";
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+
+  color: var(--basic-white);
+}
+.product-item-cart .buy {
+  font-size: 14px;
+  line-height: 18px;
+
+  text-transform: uppercase;
+
+  color: var(--basic-white);
+  background-color: #63A63E;
+}
+.product-item-cart .bookmarks {
+  font-size: 14px;
+  line-height: 18px;
+
+  text-transform: uppercase;
+
+  border: 3px solid #63A63E;
+
+  color: #32425C;
+  background-color: var(--basic-white);
+}
+
+.main-popularProducts-item:hover {
+  background-color: #C4C4C4;
+
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+.main-popularProducts-item:hover .product-item-cart {
+  display: block;
+}
+.main-popularProducts-item:hover .product-item-image {
+  display: none;
+}
+.product-item-cart .buy:hover {
+  background-color: var(--success);
+}
+.product-item-cart .buy:active {
+  background-color: #518534;
+}
+.product-item-cart .bookmarks:hover {
+  border: 3px solid #32425C;
+}
+.product-item-cart .bookmarks:active {
+  opacity: 0.5;
+}
 
 
+/* POPULAR MANUFACTURES */
+.main-popularManufactures-head {
+  background-color: #F9F5F0;
+}
+.main-popularManufactures-head h3 {
+  font-size: 30px;
+  line-height: 30px;
 
+  text-transform: uppercase;
+
+  color: #32425C;
+}
+.main-popularManufactures-head button a {
+  font-size: 14px;
+  line-height: 18px;
+
+  text-transform: uppercase;
+
+  color: var(--basic-white);
+}
+.main-popularManufactures-item {
+  border: 1px solid #EAEAEA;
+}
+
+.main-popularManufactures-item:hover {
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+}
+.main-popularManufactures-item:active {
+  opacity: 0.5;
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+}
 
 
 
