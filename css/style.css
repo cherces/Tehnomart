@@ -279,17 +279,17 @@
 
   color: var(--basic-white);
 }
-.main-popularProducts-item {
+.products-item {
   border: 1px solid #EAEAEA;
 }
-.main-popularProducts-item-name {
+.products-item-name {
   font-family: "PT Sans";
   line-height: 20px;
   font-weight: bold;
 
   color: var(--basic-black);
 }
-.main-popularProducts-item-previosPrice {
+.products-item-previosPrice {
   font-family: "PT Sans";
   font-size: 17px;
   line-height: 18px;
@@ -299,7 +299,7 @@
 
   color: #A9A9A9;
 }
-.main-popularProducts-item .price-button {
+.products-item .price-button {
   font-family: "PT Sans";
   font-size: 17px;
   line-height: 18px;
@@ -328,15 +328,13 @@
   background-color: var(--basic-white);
 }
 
-.main-popularProducts-item:hover {
-  background-color: #C4C4C4;
-
+.products-item:hover {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
-.main-popularProducts-item:hover .product-item-cart {
+.products-item:hover .product-item-cart {
   display: block;
 }
-.main-popularProducts-item:hover .product-item-image {
+.products-item:hover .product-item-image {
   display: none;
 }
 .product-item-cart .buy:hover {
@@ -658,4 +656,38 @@
 .sort-askdesk-item-input:checked + label .sort-askdesk-icon {
   fill: var(--basic-red);
 }
+
+
+/*  PAGINATION  */
+
+.pagination-list,
+.pagination-list-item {
+  display: inline;
+}
+.pagination-list-item {
+  margin-right: 10px;
+
+  border: 1px solid #E5E5E5;
+  border-radius: 2px;
+}
+.pagination-list-item a {
+  color: var(--basic-black);
+}
+.next-page a {
+  text-transform: uppercase;
+}
+.current-pagination {
+  background-color: var(--basic-red);
+}
+.current-pagination a {
+  color: var(--basic-white);
+}
+
+.pagination-list-item:hover {
+  border: 1px solid #C5C5C5;
+}
+.pagination-list-item:active {
+  border: 1px solid var(--basic-red);
+}
+
 
