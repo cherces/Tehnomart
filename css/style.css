@@ -499,6 +499,44 @@
 
 /*   CATALOG   */
 
+
+/*  USER  */
+
+.user-space button {
+  border: none;
+
+  background-color: var(--basic-white);
+}
+.user-space a {
+  color: #32425C;
+}
+.user-icon,
+.user-logout {
+  fill: #C5C5C5;
+}
+
+.user-space:hover .user-icon,
+.user-space:hover .user-logout {
+  fill: var(--basic-grey);
+}
+.user-space:hover a {
+  color: var(--basic-red);
+}
+.user-space:active {
+  opacity: 0.5;
+}
+.user-space:active a {
+  color: var(--basic-greylight);
+}
+.user-space:active .user-icon,
+.user-space:active .user-logout {
+  fill: #C5C5C5;
+}
+
+
+
+/*  BREADCRUMBS  */
+
 .breadcrumbs-container a {
   color: var(--basic-black);
 }
@@ -578,8 +616,13 @@
 
   background-color: #F7F3EC;
 }
-.filter-manufacturerList-item label,
-.filter-powerList-item label {
+.filter-tree-item {
+  margin-bottom: 20px;
+}
+.filter-tree-item input {
+  display: none;
+}
+.filter-tree-item label {
   font-size: 15px;
   line-height: 19px;
 }
@@ -589,6 +632,52 @@
   border: 1px solid #E5E5E5;
 
   background-color: var(--basic-white);
+}
+
+.filter-tree-item-label-checkbox::before {
+  content: " ";
+  position: absolute;
+  width: 27px;
+  height: 23px;
+
+  margin-left: -30px;
+  margin-top: -3px;
+
+  opacity: 0.6;
+
+  background-image: url("/img/catalog/checkbox-off.svg");
+  background-repeat: no-repeat;
+}
+.filter-tree-item-label-radio::before {
+  content: " ";
+  position: absolute;
+  width: 27px;
+  height: 23px;
+
+  margin-left: -30px;
+  margin-top: -3px;
+
+  opacity: 0.6;
+
+  background-image: url("/img/catalog/radio-off.svg");
+  background-repeat: no-repeat;
+}
+
+.filter-tree-item-checkbox:hover + label::before,
+.filter-tree-item-radio:hover + label::before {
+  opacity: 0.99;
+}
+
+.filter-tree-item-checkbox:checked + label::before {
+  background-image: url("/img/catalog/checkbox-on.svg");
+}
+.filter-tree-item-radio:checked + label::before {
+  background-image: url("/img/catalog/radio-on.svg");
+}
+
+.filter-tree-item-input:disabled + label,
+.filter-tree-item-input:disabled + label::before {
+  opacity: 0.4;
 }
 
 
@@ -688,6 +777,18 @@
 }
 .pagination-list-item:active {
   border: 1px solid var(--basic-red);
+}
+
+
+
+/*  ABOUT PRODUCT  */
+
+.catalog-aboutProduct-container {
+  background-color: #F1F5F7;
+}
+.catalog-aboutProduct p {
+  font-size: 13px;
+  line-height: 24px;
 }
 
 
