@@ -66,6 +66,10 @@
 .simple-link {
   text-decoration: none;
 }
+.link-button {
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
 
 
                          /*   INDEX   */
@@ -79,44 +83,89 @@
   background-color: #F1F5F7;
 }
 .headline-container {
+  height: 42px;
+
   background-color: var(--basic-extragrey);
 }
 .headline {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
   width: 940px;
+
   margin: 0 auto;
 }
+
 .headline a {
   color: var(--basic-white);
 }
 .headline svg {
+  margin-right: 8px;
+
   fill: rgba(255, 255, 255, 0.5);
 }
+
 .logo-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 220px;
+  height: 42px;
+
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
-.headline input {
+.search {
+  display: flex;
+}
+.search-button {
+  width: 43px;
+  height: 42px;
+
+  padding: 0;
+
+  border: none;
+
+  background-color: inherit;
+}
+.search-field {
+  width: 228px;
+  height: 42px;
+
+  padding: 0;
+
   border: none;
 
   background-color: var(--basic-extragrey);
 }
-.search {
-  display: inline-block;
-}
-.search input::placeholder {
+.search-field::placeholder {
   color: var(--basic-white);
 }
+.bookmarks,
+.cart,
+.checkout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 150px;
+}
+.checkout {
+  background-color: var(--basic-green);
+}
+
 
 .logo-button:active {
   background-color: var(--error);
 }
-.search input:focus {
-  background-color: var(--basic-white);
 
+.search:hover svg {
+  fill: var(--basic-white);
 }
-.search input:focus .head-search-icon {
-  fill: var(--basic-red);
+.search-field:focus {
+  background-color: var(--basic-white);
 }
-.search:hover svg,
+
 .bookmarks:hover svg,
 .cart:hover svg {
   fill: var(--basic-white);
@@ -124,15 +173,19 @@
 .bookmarks:active,
 .cart:active {
   background-color: #161D29;
+  color: rgba(255, 255, 255, 0.5);
 }
-.checkout {
-  background-color: var(--basic-green);
+.bookmarks:active .bookmarks-icon,
+.cart:active .cart-icon {
+  fill: rgba(255, 255, 255, 0.5);
 }
+
 .checkout:hover {
   background-color: var(--success);
 }
-.checkout:active a {
+.checkout:active {
   color: rgba(255, 255, 255, 0.5);
+  background-color: var(--basic-green);
 }
 
 
