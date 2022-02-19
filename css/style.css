@@ -276,16 +276,36 @@
 .registration-button {
   width: 150px;
 }
+
+
 .head-bottom-container {
   width: 940px;
+  height: 60px;
 
   margin: 0 auto;
+  margin-bottom: 60px;
 
+  box-shadow: inset 0px -5px 0px #293449;
   background-color: var(--basic-grey);
 }
-.head-nav ul li a {
+.head-bottom {
+  margin-left: 52px;
+  margin-right: 52px;
+}
+.head-nav-list a {
   color: var(--basic-white);
 }
+.head-nav-list {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+.head-nav-list li {
+  padding-top: 16px;
+  padding-bottom: 20px;
+  padding-left: 27px;
+  padding-right: 24px;
+}
+
 
 .signin-button:hover,
 .registration-button:hover {
@@ -302,11 +322,14 @@
 .signin-button:active .signin-icon {
   fill: #C5C5C5;
 }
-.head-nav ul li:hover {
+
+.head-nav-list li:hover {
   background-color: #293449;
 }
-.head-nav ul li:active a {
+.head-nav-list li:active a {
   opacity: 0.5;
+}
+.head-nav-list li:active {
   background-color: #1D2739;
 }
 
