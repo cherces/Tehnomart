@@ -883,7 +883,7 @@
   margin-top: 64px;
 }
 .main-services-head p,
-.main-services-body-serviceInfo p {
+.main-services-body-serviceInfo-text {
   font-family: "PT Sans";
   font-size: 13px;
   line-height: 24px;
@@ -893,11 +893,13 @@
 }
 .main-services-body {
   display: grid;
-  grid-template-columns: min-content 1fr;
-  column-gap: 80px;
+  grid-template-columns: repeat(12, 60px);
+  column-gap: 20px;
 }
 .main-services-body-servicesList {
   position: relative;
+
+  grid-column: 1 / 4;
 
   width: 240px;
 }
@@ -909,7 +911,6 @@
 
   top: -49px;
   right: 0;
-
 
   background-image: url("/img/index/main/services/hernya.png");
 }
@@ -938,9 +939,41 @@
   color: var(--basic-white);
   background-color: #32425C;
 }
-.main-services-body-serviceInfo {}
-.main-services-body-serviceIcon {}
 
+.main-services-body-serviceInfo-list {
+  grid-column: 5 / 12;
+}
+.main-services-body-servicesList-item{}
+.delivery-service {
+  display: grid;
+  grid-template-columns: repeat(8, 60px);
+  grid-template-rows: min-content 1fr;
+  gap: 20px;
+}
+.main-services-body-serviceInfo-title {
+  text-transform: uppercase;
+
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+
+  z-index: 1;
+
+  color: #32425C;
+}
+.main-services-body-serviceInfo-text {
+  grid-column: 1 / 5;
+  grid-row: 2 / 3;
+  z-index: 1;
+}
+.main-services-image {
+  grid-column: 1 / 8;
+  grid-row: 1 / 3;
+
+  margin-top: 20px;
+  margin-bottom: 4px;
+
+  justify-self: end;
+}
 
 .main-services-body-servicesList-item input:hover + label {
   background-color: #293449;

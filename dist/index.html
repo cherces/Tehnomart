@@ -289,22 +289,25 @@
 
               <ul class="simple-list main-services-body-servicesList">
                 <li class="main-services-body-servicesList-item">
-                  <input type="radio" name="services" id="services-delivery-field" value="delivery" checked="">
+                  <input class="service-delivery-radio" type="radio" name="services" id="services-delivery-field" checked="">
                   <label for="services-delivery-field">Доставка</label>
                 </li>
                 <li class="main-services-body-servicesList-item">
-                  <input type="radio" name="services" id="services-guarantee-field" value="guarantee">
+                  <input class="service-guarantee-radio" type="radio" name="services" id="services-guarantee-field">
                   <label for="services-guarantee-field">Гарантия</label>
                 </li>
                 <li class="main-services-body-servicesList-item">
-                  <input type="radio" name="services" id="services-credit-field" value="credit">
+                  <input class="service-credit-radio" type="radio" name="services" id="services-credit-field">
                   <label for="services-credit-field">Кредит</label>
                 </li>
               </ul>
 
 
-              <div class="main-services-body-serviceInfo">
-                <h3 class="simple-title main-services-body-serviceInfo-title">Доставка</h3>
+              <ul class="simple-list main-services-body-serviceInfo-list">
+
+                <li class="main-services-body-serviceInfo-list-item delivery-service">
+                  <h3 class="simple-title main-services-body-serviceInfo-title">Доставка</h3>
+
                   <p class="main-services-body-serviceInfo-text">
                     Мы с удовольствием доставим ваш товар прямо<br>
                     к вашему подъезду совершенно бесплатно!<br>
@@ -312,16 +315,38 @@
                     поднимая его на ваш этаж!
                   </p>
 
-                  <div class="main-services-body-serviceIcon">
-                    <img src="/delivery-icon.2cc476e3.png" alt="">
-                  </div>
-              </div>
+                  <img class="main-services-image" src="/delivery-icon.2cc476e3.png" alt="">
+                </li>
+                <li hidden="" class="main-services-body-serviceInfo-list-item guarantee-service">
+                  <h3 class="simple-title main-services-body-serviceInfo-title">Доставка</h3>
 
-            </div>
+                  <p class="main-services-body-serviceInfo-text">
+                    Мы с удовольствием доставим ваш товар прямо<br>
+                    к вашему подъезду совершенно бесплатно!<br>
+                    Ведь мы неплохо заработаем,<br>
+                    поднимая его на ваш этаж!
+                  </p>
+
+                  <img class="main-services-image" src="/delivery-icon.2cc476e3.png" alt="">
+                </li>
+                <li hidden="" class="main-services-body-serviceInfo-list-item credit-service">
+                  <h3 class="simple-title main-services-body-serviceInfo-title">Доставка</h3>
+
+                  <p class="main-services-body-serviceInfo-text">
+                    Мы с удовольствием доставим ваш товар прямо<br>
+                    к вашему подъезду совершенно бесплатно!<br>
+                    Ведь мы неплохо заработаем,<br>
+                    поднимая его на ваш этаж!
+                  </p>
+
+                  <img class="main-services-image" src="/delivery-icon.2cc476e3.png" alt="">
+                </li>
+
+              </ul>
 
           </div>
 
-      </section>
+      </div></section>
 
       <section class="main-companyInfo-container container">
           <h2 hidden="">О компании</h2>
