@@ -75,6 +75,8 @@
 
   text-decoration: none;
 
+  border-radius: 3px;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -216,20 +218,21 @@
 /*  HEAD MIDDLE BOTTOM */
 
 .head-middle-container {
-  margin-bottom: 40px;
-  padding-left: 30px;
-}
-.head-middle {
-  display: flex;
-
   width: 940px;
 
-  margin: 0 auto;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.head-middle {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  column-gap: 20px;
 }
 .head-title {
   width: 210px;
 
-  margin-right: 93px;
+  padding-left: 30px;
 }
 .head-title h1 {
   font-style: italic;
@@ -241,9 +244,8 @@
   color: var(--basic-red);
 }
 .head-contacts {
-  width: 270px;
-
-  margin-right: 80px;
+  margin-top: 6px;
+  justify-self: center;
 }
 .head-contacts a {
   font-size: 21px;
@@ -260,18 +262,18 @@
   font-size: 14px;
   line-height: 24px;
 
-  display: flex;
-  justify-content: center;
-
   color: #32425C;
 }
-.user-nav {
-  display: flex;
 
-  width: 270px;
+
+.user-nav {
+  display: grid;
+
+  justify-self: end;
 }
 .signin-button,
-.registration-button {
+.registration-button,
+.user-info-button {
   font-size: 21px;
   line-height: 21px;
 
@@ -287,18 +289,57 @@
 
   background-color: var(--basic-white);
 }
+.signin-button {
+  grid-column: 1 / 2;
+
+  width: 120px;
+
+  margin-right: 10px;
+}
 .signin-icon {
   margin-right: 7px;
 
   fill: #C5C5C5;
 }
-.signin-button {
-  width: 120px;
-
-  margin-right: 10px;
-}
 .registration-button {
+  grid-column: 2 / 3;
+
   width: 150px;
+}
+.user-info-button {
+  grid-column: 1 / 4;
+
+  width: 300px;
+}
+.user-icon,
+.user-logout {
+  fill: #C5C5C5;
+}
+.user-icon {
+  margin-right: 21px;
+}
+.user-logout {
+  margin-left: 21px;
+}
+.my-orders,
+.my-account {
+  grid-row: 2;
+
+  justify-self: center;
+
+  color: #32425C;
+}
+.my-orders {
+  grid-column: 1 / 2;
+}
+.user-nav .point {
+  grid-column: 2 / 3;
+
+  justify-self: center;
+  margin-top: 30%;
+}
+.my-account {
+  grid-column: 3 / 4;
 }
 
 
@@ -345,6 +386,21 @@
 }
 .signin-button:active .signin-icon {
   fill: #C5C5C5;
+}
+.user-info-button:hover .user-icon,
+.user-info-button:hover .user-logout {
+  fill: var(--basic-grey);
+}
+.my-orders:hover,
+.my-account:hover {
+  color: var(--basic-red);
+}
+.user-info-button:active {
+  opacity: 0.5;
+}
+.my-orders:active,
+.my-account:active {
+  color: var(--basic-greylight);
 }
 
 .head-nav-list li:hover {
