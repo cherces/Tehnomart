@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"C:\\Users\\cherces\\Desktop\\web-projects\\htmlacademy\\Tehnomart\\Техномарт\\img\\catalog\\icon-right-small.svg":[["icon-right-small.8ae74ab9.svg","img/catalog/icon-right-small.svg"],"img/catalog/icon-right-small.svg"],"C:\\Users\\cherces\\Desktop\\web-projects\\htmlacademy\\Tehnomart\\Техномарт\\img\\catalog\\checkbox-off.svg":[["checkbox-off.3ebd85bf.svg","img/catalog/checkbox-off.svg"],"img/catalog/checkbox-off.svg"],"C:\\Users\\cherces\\Desktop\\web-projects\\htmlacademy\\Tehnomart\\Техномарт\\img\\catalog\\radio-off.svg":[["radio-off.559691a6.svg","img/catalog/radio-off.svg"],"img/catalog/radio-off.svg"],"C:\\Users\\cherces\\Desktop\\web-projects\\htmlacademy\\Tehnomart\\Техномарт\\img\\catalog\\checkbox-on.svg":[["checkbox-on.e2fa1531.svg","img/catalog/checkbox-on.svg"],"img/catalog/checkbox-on.svg"],"C:\\Users\\cherces\\Desktop\\web-projects\\htmlacademy\\Tehnomart\\Техномарт\\img\\catalog\\radio-on.svg":[["radio-on.9dded12a.svg","img/catalog/radio-on.svg"],"img/catalog/radio-on.svg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"C:\\Users\\cherces\\Desktop\\web-projects\\htmlacademy\\Tehnomart\\Техномарт\\img\\index\\main\\services\\hernya.png":[["hernya.305d298e.png","img/index/main/services/hernya.png"],"img/index/main/services/hernya.png"],"C:\\Users\\cherces\\Desktop\\web-projects\\htmlacademy\\Tehnomart\\Техномарт\\img\\catalog\\icon-right-small.svg":[["icon-right-small.8ae74ab9.svg","img/catalog/icon-right-small.svg"],"img/catalog/icon-right-small.svg"],"C:\\Users\\cherces\\Desktop\\web-projects\\htmlacademy\\Tehnomart\\Техномарт\\img\\catalog\\checkbox-off.svg":[["checkbox-off.3ebd85bf.svg","img/catalog/checkbox-off.svg"],"img/catalog/checkbox-off.svg"],"C:\\Users\\cherces\\Desktop\\web-projects\\htmlacademy\\Tehnomart\\Техномарт\\img\\catalog\\radio-off.svg":[["radio-off.559691a6.svg","img/catalog/radio-off.svg"],"img/catalog/radio-off.svg"],"C:\\Users\\cherces\\Desktop\\web-projects\\htmlacademy\\Tehnomart\\Техномарт\\img\\catalog\\checkbox-on.svg":[["checkbox-on.e2fa1531.svg","img/catalog/checkbox-on.svg"],"img/catalog/checkbox-on.svg"],"C:\\Users\\cherces\\Desktop\\web-projects\\htmlacademy\\Tehnomart\\Техномарт\\img\\catalog\\radio-on.svg":[["radio-on.9dded12a.svg","img/catalog/radio-on.svg"],"img/catalog/radio-on.svg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59781" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54903" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
