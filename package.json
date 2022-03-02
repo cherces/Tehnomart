@@ -7,7 +7,7 @@
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
-    "start": "parcel Catalog.html --open",
+    "start": "parcel index.html --open",
     "build": "parcel build --no-minify index.html --public-url /Tehnomart --no-content-hash",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
