@@ -219,7 +219,7 @@
   justify-content: space-between;
 }
 .head-title {
-  width: 200px;
+  width: 210px;
   min-height: 69px;
 
   margin-left: 30px;
@@ -424,26 +424,27 @@
 
 
 /*  CATALOG  */
+
 .main-catalog-container {
   margin-bottom: 59px;
 }
 .main-catalog {
-  display: grid;
-  grid-template-columns: repeat(3, 300px);
-  grid-template-rows: repeat(3, 123px);
-  grid-template-areas:
-  "materials tools technics"
-  "perforators perforators discount"
-  "perforators perforators delivery";
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  min-height: 409px;
 }
 .main-catalog-item {
   position: relative;
-  display: grid;
-  grid-template-areas:
-    "catalog-title"
-    "catalog-link";
-  row-gap: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+
+  width: 300px;
+  height: 123px;
 
   padding: 20px 135px 21px 23px;
 }
@@ -458,8 +459,6 @@
   line-height: 30px;
   font-weight: bold;
 
-  grid-area: catalog-title;
-
   margin: 0;
   padding: 0;
 
@@ -472,18 +471,19 @@
   text-decoration: none;
   text-transform: uppercase;
 
-  grid-area: catalog-link;
-
   margin: 0;
   padding: 10px 24px;
 
   color: var(--basic-white);
   background-color: rgba(255,255,255,0.3);
 }
+.main-right-catalog-items-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 .main-catalog-materials {
-  grid-area: materials;
-
   background-color: var(--special-yellow);
 }
 .main-catalog-materials img {
@@ -491,8 +491,6 @@
   left: 213px;
 }
 .main-catalog-tools {
-  grid-area: tools;
-
   background-color: #3BBCE3;
 }
 .main-catalog-tools img {
@@ -500,8 +498,6 @@
   left: 194px;
 }
 .main-catalog-technics {
-  grid-area: technics;
-
   background-color: #DC91D8;
 }
 .main-catalog-technics img {
@@ -509,8 +505,6 @@
   left: 191px;
 }
 .main-catalog-discount {
-  grid-area: discount;
-
   background-color: #8ED78F;
 }
 .main-catalog-discount img {
@@ -518,8 +512,6 @@
   left: 196px;
 }
 .main-catalog-delivery {
-  grid-area: delivery;
-
   background-color: var(--special-yellow);
 }
 .main-catalog-delivery img {
