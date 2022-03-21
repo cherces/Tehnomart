@@ -685,53 +685,71 @@
 /*  POPULAR PRODUCTS */
 
 .main-popularProducts-container {
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 .main-popularProducts {
-  display: grid;
-  grid-template-rows: min-content 1fr;
-  row-gap: 20px;
+  display: flex;
+  flex-direction: column;
 }
 .main-popularProducts-head {
-  display: grid;
-  grid-template-columns: 1fr min-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-sizing: border-box;
+
+  min-height: 89px;
+  margin-bottom: 20px;
+
+  padding-left: 30px;
+  padding-right: 15px;
 
   background-color: #F9F5F0;
 }
 .main-popularProducts-head h3 {
   text-transform: uppercase;
 
-  margin-left: 30px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-
   color: #32425C;
 }
 .main-popularProducts-head a {
   text-transform: uppercase;
-
-  margin-top: 25px;
-  margin-right: 15px;
-  margin-bottom: 25px;
 }
 
 .products-items-container {
-  display: grid;
-  grid-template-columns: repeat(4, 220px);
-  grid-template-rows: 318px;
-  column-gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
 .products-item {
-  border: 1px solid #EAEAEA;
+  display: flex;
+
+  box-sizing: border-box;
+
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 .products-item a {
-  display: grid;
-  grid-template-rows: 170px min-content min-content min-content;
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+
+  min-height: 318px;
+  width: 220px;
+
+  border: 1px solid #EAEAEA;
+}
+.products-item-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 220px;
+  height: 170px;
+  margin-bottom: 5px;
 }
 .products-item-image {
-  justify-self: center;
 
-  margin-bottom: 5px;
 }
 .products-item-name {
   font-family: "PT Sans";
@@ -739,6 +757,9 @@
   font-weight: bold;
 
   text-align: center;
+
+  min-height: 43px;
+  width: 220px;
 
   margin: 0;
   padding: 0;
@@ -756,6 +777,8 @@
 
   text-align: center;
 
+  min-height: 18px;
+
   margin: 0;
   padding: 0;
   margin-bottom: 13px;
@@ -768,10 +791,12 @@
   line-height: 18px;
   font-weight: bold;
 
-  justify-self: center;
+  margin: 0 auto;
 
   width: 141px;
   height: 38px;
+
+  margin-bottom: 20px;
 
   border: none;
 
@@ -780,8 +805,8 @@
   color: var(--basic-white);
 }
 .products-item-cart {
-  justify-self: center;
-  margin-top: 38px;
+  width: 220px;
+  height: 170px;
 }
 .products-item-cart .buy {
   font-size: 14px;
@@ -815,13 +840,18 @@
   background-color: var(--basic-white);
 }
 
+.products-item:nth-child(4n) {
+  margin-right: 0;
+}
 .products-item:hover {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 .products-item:hover .products-item-cart {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.products-item:hover .products-item-image {
+.products-item:hover .products-item-image-container {
   display: none;
 }
 .products-item-cart .buy:hover {
@@ -841,41 +871,41 @@
 /* POPULAR MANUFACTURES */
 
 .main-popularManufactures-container {
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 .main-popularManufactures {
-  display: grid;
-  grid-template-rows: min-content 1fr;
-  row-gap: 20px;
+  display: flex;
+  flex-direction: column;
 }
 .main-popularManufactures-head {
-  display: grid;
-  grid-template-columns: 1fr min-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-sizing: border-box;
+
+  min-height: 89px;
+  margin-bottom: 20px;
+
+  padding-left: 30px;
+  padding-right: 15px;
 
   background-color: #F9F5F0;
 }
 .main-popularManufactures-head h3 {
   text-transform: uppercase;
 
-  margin-left: 30px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-
   color: #32425C;
 }
 .main-popularManufactures-head a {
   text-transform: uppercase;
 
-  margin-top: 25px;
-  margin-right: 15px;
-  margin-bottom: 25px;
-
   color: var(--basic-white);
 }
 .main-popularManufactures-items-container {
-  display: grid;
-  grid-template-columns: repeat(4, 220px);
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
 .main-popularManufactures-item {
   display: flex;
@@ -887,9 +917,15 @@
   width: 220px;
   height: 145px;
 
+  margin-right: 20px;
+  margin-bottom: 20px;
+
   border: 1px solid #EAEAEA;
 }
 
+.main-popularManufactures-item:nth-child(4n) {
+  margin-right: 0;
+}
 .main-popularManufactures-item:hover {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
