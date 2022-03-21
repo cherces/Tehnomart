@@ -1072,39 +1072,38 @@
   margin-bottom: 70px;
 }
 .main-companyInfo {
-  display: grid;
-  grid-template-columns: repeat(12, 60px);
-  column-gap: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 .main-companyInfo-about {
-  grid-column: 1 / 8;
+  display: flex;
+  flex-direction: column;
 
-  display: grid;
-  grid-template-columns: repeat(8, 60px);
-  column-gap: 20px;
+  width: 460px;
 }
 .main-companyInfo-about h3 {
   text-transform: uppercase;
 
-  grid-column: 1 / 8;
+  min-height: 30px;
 
   margin: 0;
   padding: 0;
+
+  margin-bottom: 24px;
 }
 .main-companyInfo-about p {
   font-family: "PT Sans";
   font-size: 13px;
   line-height: 24px;
 
-  margin: 0;
-  margin-top: 24px;
+  min-height: 30px;
 
-  grid-column: 1 / 7;
+  margin: 0;
+  margin-bottom: 1px;
 }
 .main-companyInfo-body-partners-items-container {
-  grid-column: 1 / 4;
-
-  margin-left: 35px;
+  padding-left: 35px;
+  margin-bottom: 20px;
 }
 .main-companyInfo-body-partners-item {
   margin-bottom: 12px;
@@ -1122,38 +1121,42 @@
   margin-left: -35px;
   margin-top: 13px;
 
-
   background-color: #EE3643;
 }
 .main-companyInfo-about a {
-  grid-column: 1 / 4;
-
   width: 220px;
-
-  margin-top: 20px;
 }
 
 .main-companyInfo-contacts {
-  grid-column: 9 / 12;
+  display: flex;
+  flex-direction: column;
+
+  width: 300px;
 }
 .main-companyInfo-contacts h3 {
   text-transform: uppercase;
+
+  min-height: 30px;
+
+  margin-bottom: 24px;
 }
 .main-companyInfo-contacts p {
   font-family: "PT Sans";
   font-size: 13px;
   line-height: 24px;
 
+  min-height: 10px;
+
   margin: 0;
-  margin-top: 24px;
+  margin-bottom: 32px;
 }
 .main-companyInfo-contacts img {
-  margin-top: 32px;
+  margin-bottom: 25px;
+
+  min-height: 150px;
 }
 .main-companyInfo-contacts a {
   width: 300px;
-
-  margin-top: 25px;
 }
 
 
