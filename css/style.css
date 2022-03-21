@@ -521,6 +521,9 @@
 
 .main-catalog-bigItem {
   position: relative;
+  display: flex;
+
+  box-sizing: border-box;
 
   width: 620px;
 
@@ -531,16 +534,19 @@
   position: absolute;
 }
 .main-catalog-bigItem-content {
-  display: grid;
-  grid-template-rows: repeat(4, min-content);
-  grid-template-areas:
-    "title"
-    "slogan"
-    "sliders"
-    "bottom";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-  padding-left: 25px;
-  padding-right: 20px;
+  box-sizing: border-box;
+
+  width: 100%;
+
+  padding: 23px 25px 20px 20px;
+}
+.main-catalog-bigItem-content-top {
+  display: flex;
+  flex-direction: column;
 }
 .main-catalog-bigItem-title {
   font-size: 36px;
@@ -549,10 +555,8 @@
 
   text-transform: uppercase;
 
-  grid-area: title;
-
   margin: 0;
-  margin-top: 23px;
+  margin-bottom: 5px;
 
   z-index: 1;
 
@@ -562,19 +566,18 @@
   font-size: 28px;
   line-height: 24px;
 
-  grid-area: slogan;
-
   margin: 0;
-  margin-top: 5px;
 
   z-index: 1;
 
   color: var(--basic-white);
 }
+.main-catalog-bigItem-slider-container {
+  display: flex;
+  justify-content: space-between;
+}
 .main-catalog-bigItem-previousSlide {
   font: inherit;
-
-  grid-area: sliders;
 
   width: 22px;
   height: 40px;
@@ -583,7 +586,6 @@
 
   margin: 0;
   padding: 0;
-  margin-top: 35px;
 
   z-index: 1;
 
@@ -595,8 +597,6 @@
 .main-catalog-bigItem-nextSlide {
   font: inherit;
 
-  grid-area: sliders;
-
   width: 22px;
   height: 40px;
 
@@ -604,8 +604,6 @@
 
   margin: 0;
   padding: 0;
-  margin-top: 35px;
-  margin-left: 550px;
 
   z-index: 1;
 
@@ -614,11 +612,13 @@
   color: inherit;
   background-color: transparent;
 }
+.main-catalog-bigItem-content-bottom {
+  display: flex;
+  align-items: center;
+}
 .main-catalog-bigItem-button {
   font-size: 14px;
   line-height: 18px;
-
-  grid-area: bottom;
 
   width: 192px;
   height: 38px;
@@ -626,8 +626,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  margin-top: 39px;
-  padding: 11px 46px 9px 46px;
+  margin-right: 79px;
 
   z-index: 1;
 
@@ -635,15 +634,12 @@
   background-color: var(--basic-red);
 }
 .main-catalog-bigItem-previousButton {
-  grid-area: bottom;
-
   width: 10px;
   height: 10px;
 
   margin: 0;
   padding: 0;
-  margin-top: 58px;
-  margin-left: 270px;
+  margin-right: 12px;
 
   border: 2px solid var(--basic-white);
   border-radius: 50%;
@@ -655,15 +651,11 @@
   background-color: var(--basic-red);
 }
 .main-catalog-bigItem-nextButton {
-  grid-area: bottom;
-
   width: 10px;
   height: 10px;
 
   margin: 0;
   padding: 0;
-  margin-top: 58px;
-  margin-left: 294px;
 
   border: 2px solid var(--basic-white);
   border-radius: 50%;
