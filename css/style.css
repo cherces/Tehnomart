@@ -1163,37 +1163,43 @@
 /*  FOOTER  */
 
 .main-footer {
-  display: grid;
-  grid-template-rows: min-content min-content;
+  display: flex;
+  flex-direction: column;
 
   background-color: #32425C;
 }
 .top-footer {
-  display: grid;
-  grid-template-columns: auto auto;
-  column-gap: 58px;
+  display: flex;
 
   margin-bottom: 55px;
 }
+.footer-logo-container {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 140px;
+  margin-right: 58px;
+}
 .top-footer a {
-  height: 68px;
+  min-height: 68px;
+
+  margin-bottom: 22px;
 }
 .top-footer p {
-  grid-row: 2;
-
   margin: 0;
-  margin-top: 22px;
+
+  width: 335px;
 
   color: var(--basic-white);
 }
 .footer-site-navigation {
-  grid-row: 1 / 3;
+  padding-top: 37px;
 
-  margin-top: 37px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.footer-site-navigation-item {
-  display: inline-block;
-}
+.footer-site-navigation-item {}
 .footer-site-navigation-item a {
   color: var(--basic-white);
 }
@@ -1204,7 +1210,7 @@
   margin-left: 28px;
 }
 .footer-site-navigation-item:nth-child(n + 6) {
-  margin-top: 34px;
+  padding-top: 34px;
 }
 .footer-site-navigation-item:nth-child(n + 6) a {
   color: #FFD180;
@@ -1214,32 +1220,30 @@
   background-color: var(--basic-extragrey);
 }
 .bottom-footer {
-  display: grid;
-  grid-template-columns: repeat(12, 60px);
-  column-gap: 20px;
+  display: flex;
 
-  margin-top: 35px;
+  padding-top: 35px;
   margin-bottom: 35px;
+  justify-content: space-between;
 }
 .bottom-footer p {
   font-size: 16px;
   line-height: 18px;
 
-  grid-column: 1 / 5;
+  width: 230px;
 
   margin: 0;
 
   color: var(--basic-white);
 }
 .bottom-footer-social-networks-container {
-  grid-column: 5 / 9;
-  justify-self: center;
-
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .bottom-footer-social-networks-item {
-  width: 44px;
-  height: 44px;
+
+  min-height: 44px;
 }
 .bottom-footer-social-networks-item a {
   display: flex;
@@ -1256,16 +1260,19 @@
 .bottom-footer-social-networks-item:not(:last-child) {
   margin-right: 3px;
 }
+.bottom-footer-feedback-container {
+  display: flex;
+}
 .bottom-footer-feedback {
-  grid-column: 9 / 11;
+  width: 140px;
+
+  margin-right: 50px;
 }
 .bottom-footer-feedback a {
   color: #FFD180;
 }
 .bottom-footer-developed {
-  grid-column: 11 / 13;
-
-  margin-left: 30px;
+  width: 100px;
 }
 .bottom-footer-developed a {
   color: #FFD180;
