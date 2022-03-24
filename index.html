@@ -21,7 +21,7 @@
 
       <div class="headline-container">
 
-        <div class="headline">
+        <div class="headline container">
           <a class="link-button logo-button" href="/Tehnomart/index.html"><img src="/Tehnomart/logo.a787f247.svg" width="108px" height="18px" alt="логотип"></a>
 
           <form class="search" action="#" method="get">
@@ -58,15 +58,15 @@
 
       <div class="head-middle-container">
 
-        <div class="head-middle">
+        <div class="head-middle container">
 
           <div class="head-title">
-            <h1>Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</h1>
+            <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
           </div>
 
           <div class="head-contacts">
             <a class="simple-link" href="tel:+78005558628">
-              <img src="/Tehnomart/phone-icon.02eb4d4b.svg">
+              <img class="contacts-icon" src="/Tehnomart/phone-icon.02eb4d4b.svg">
               +7 800 555-86-28
             </a>
             <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
@@ -87,7 +87,7 @@
 
       </div>
 
-      <div class="head-bottom-container">
+      <div class="head-bottom-container container">
         <div class="head-bottom">
               <nav class="head-nav">
                 <ul class="simple-list head-nav-list">
@@ -130,32 +130,45 @@
                 <img class="main-catalog-item-icon" src="/Tehnomart/technics-icon.09b4c4f1.svg" width="78px" height="62px" alt="">
               </div>
 
-              <div class="main-catalog-item main-catalog-discount">
-                <p class="main-catalog-item-name">Скидки 50%</p>
-                <a class="main-catalog-item-button" href="#">На 350 товаров</a>
-                <img class="main-catalog-item-icon" src="/Tehnomart/discounts-icon.ffbe70cd.svg" width="59px" height="72px" alt="">
-              </div>
-
-              <div class="main-catalog-item main-catalog-delivery">
-                <p class="main-catalog-item-name">Доставка</p>
-                <a class="main-catalog-item-button" href="#">Бесплатно</a>
-                <img class="main-catalog-item-icon" src="/Tehnomart/delivery-icon.85a8e2db.svg" width="78px" height="63px" alt="">
-              </div>
-
               <div class="main-catalog-bigItem">
                 <img class="main-catalog-bigItem-image-1" src="/Tehnomart/perforators.7f44b299.jpg" width="620px" height="266px" alt="Перфораторы">
                 <img hidden="" class="main-catalog-bigItem-image-2" src="/Tehnomart/drill.69ddee79.jpg" width="620px" height="266px" alt="Дрели">
 
                 <div class="main-catalog-bigItem-content">
-                  <p class="main-catalog-bigItem-title">Перфораторы</p>
-                  <p class="main-catalog-bigItem-slogan">Настоящие мужские игрушки</p>
-                  <button type="button" class="main-catalog-bigItem-previousSlide"> <img src="/Tehnomart/icon-left.338ffb5a.svg"> </button>
-                  <button type="button" class="main-catalog-bigItem-nextSlide"><img src="/Tehnomart/icon-right.e6e16da9.svg"></button>
-                  <a class="link-button main-catalog-bigItem-button" href="/Tehnomart/Catalog.html">Открыть каталог</a>
-                  <button type="button" class="main-catalog-bigItem-previousButton"></button>
-                  <button type="button" class="main-catalog-bigItem-nextButton"></button>
+
+                  <div class="main-catalog-bigItem-content-top">
+                    <p class="main-catalog-bigItem-title">Перфораторы</p>
+                    <p class="main-catalog-bigItem-slogan">Настоящие мужские игрушки</p>
+                  </div>
+
+                  <div class="main-catalog-bigItem-slider-container">
+                    <button type="button" class="main-catalog-bigItem-previousSlide"> <img src="/Tehnomart/icon-left.338ffb5a.svg"> </button>
+                    <button type="button" class="main-catalog-bigItem-nextSlide"><img src="/Tehnomart/icon-right.e6e16da9.svg"></button>
+                  </div>
+
+                  <div class="main-catalog-bigItem-content-bottom">
+                    <a class="link-button main-catalog-bigItem-button" href="/Tehnomart/Catalog.html">Открыть каталог</a>
+                    <button type="button" class="main-catalog-bigItem-previousButton"></button>
+                    <button type="button" class="main-catalog-bigItem-nextButton"></button>
+                  </div>
+
                 </div>
               </div>
+
+              <div class="main-right-catalog-items-container">
+                <div class="main-catalog-item main-catalog-discount">
+                  <p class="main-catalog-item-name">Скидки 50%</p>
+                  <a class="main-catalog-item-button" href="#">На 350 товаров</a>
+                  <img class="main-catalog-item-icon" src="/Tehnomart/discounts-icon.ffbe70cd.svg" width="59px" height="72px" alt="">
+                </div>
+
+                <div class="main-catalog-item main-catalog-delivery">
+                  <p class="main-catalog-item-name">Доставка</p>
+                  <a class="main-catalog-item-button" href="#">Бесплатно</a>
+                  <img class="main-catalog-item-icon" src="/Tehnomart/delivery-icon.85a8e2db.svg" width="78px" height="63px" alt="">
+                </div>
+              </div>
+
           </div>
       </section>
 
@@ -178,7 +191,9 @@
                           <button class="bookmarks" type="submit">В закладки</button>
                         </form>
                       </div>
-                      <img class="products-item-image" src="/Tehnomart/bfg9000.285f486b.jpg" width="184" height="164" alt="Перфоратор BOSH BFG 9000">
+                      <div class="products-item-image-container">
+                        <img class="products-item-image" src="/Tehnomart/bfg9000.285f486b.jpg" width="184" height="164" alt="Перфоратор BOSH BFG 9000">
+                      </div>
                       <p class="products-item-name">Перфоратор BOSH BFG 9000</p>
                       <p class="products-item-previosPrice">32500 Р.</p>
                       <button class="simple-button price-button">25500 Р.</button>
@@ -192,7 +207,9 @@
                           <button class="bookmarks" type="submit">В закладки</button>
                         </form>
                       </div>
-                      <img class="products-item-image" src="/Tehnomart/bfg3000.e980806d.jpg" width="127" height="112" alt="Перфоратор BOSH BFG 3000">
+                      <div class="products-item-image-container">
+                        <img class="products-item-image" src="/Tehnomart/bfg3000.e980806d.jpg" width="127" height="112" alt="Перфоратор BOSH BFG 3000">
+                      </div>
                       <p class="products-item-name">Перфоратор BOSH BFG 3000</p>
                       <p class="products-item-previosPrice">22500 Р.</p>
                       <button class="simple-button price-button">15500 Р.</button>
@@ -206,7 +223,9 @@
                           <button class="bookmarks" type="submit">В закладки</button>
                         </form>
                       </div>
-                      <img class="products-item-image" src="/Tehnomart/bfg6000.77cfcef5.jpg" width="144" height="128" alt="Перфоратор BOSH BFG 6000">
+                      <div class="products-item-image-container">
+                        <img class="products-item-image" src="/Tehnomart/bfg6000.77cfcef5.jpg" width="144" height="128" alt="Перфоратор BOSH BFG 6000">
+                      </div>
                       <p class="products-item-name">Перфоратор BOSH BFG 6000</p>
                       <p class="products-item-previosPrice">30500 Р.</p>
                       <button class="simple-button price-button">25500 Р.</button>
@@ -220,7 +239,9 @@
                           <button class="bookmarks" type="submit">В закладки</button>
                         </form>
                       </div>
-                      <img class="products-item-image" src="/Tehnomart/bfg2000.b7fb0e60.jpg" width="127" height="112" alt="Перфоратор BOSH BFG 2000">
+                      <div class="products-item-image-container">
+                        <img class="products-item-image" src="/Tehnomart/bfg2000.b7fb0e60.jpg" width="127" height="112" alt="Перфоратор BOSH BFG 2000">
+                      </div>
                       <p class="products-item-name">Перфоратор BOSH BFG 2000</p>
                       <p class="products-item-previosPrice">22500 Р.</p>
                       <button class="simple-button price-button">12500 Р.</button>
@@ -275,7 +296,7 @@
       <section class="main-services-container">
           <h2 hidden="">Сервисы</h2>
 
-          <div class="main-services">
+          <div class="main-services container">
 
             <div class="main-services-head">
                 <h3 class="simple-title">Сервисы</h3>
@@ -303,6 +324,7 @@
               </ul>
 
               <ul class="simple-list main-services-body-serviceInfo-list">
+
                 <li class="main-services-body-serviceInfo-list-item delivery-service">
                   <h3 class="simple-title main-services-body-serviceInfo-title">Доставка</h3>
 
@@ -312,9 +334,11 @@
                     Ведь мы неплохо заработаем,<br>
                     поднимая его на ваш этаж!
                   </p>
-
-                  <img class="main-services-image" src="/Tehnomart/delivery-icon.2cc476e3.png" alt="">
+                  <div class="main-services-image-container">
+                    <img class="main-services-image" src="/Tehnomart/delivery-icon.2cc476e3.png" width="468px" height="261px" alt="">
+                  </div>
                 </li>
+
                 <li hidden="" class="main-services-body-serviceInfo-list-item guarantee-service">
                   <h3 class="simple-title main-services-body-serviceInfo-title">Доставка</h3>
 
@@ -324,9 +348,11 @@
                     Ведь мы неплохо заработаем,<br>
                     поднимая его на ваш этаж!
                   </p>
-
-                  <img class="main-services-image" src="/Tehnomart/delivery-icon.2cc476e3.png" alt="">
+                  <div class="main-services-image-container">
+                    <img class="main-services-image" src="/Tehnomart/delivery-icon.2cc476e3.png" alt="">
+                  </div>
                 </li>
+
                 <li hidden="" class="main-services-body-serviceInfo-list-item credit-service">
                   <h3 class="simple-title main-services-body-serviceInfo-title">Доставка</h3>
 
@@ -336,9 +362,11 @@
                     Ведь мы неплохо заработаем,<br>
                     поднимая его на ваш этаж!
                   </p>
-
-                  <img class="main-services-image" src="/Tehnomart/delivery-icon.2cc476e3.png" alt="">
+                  <div class="main-services-image-container">
+                    <img class="main-services-image" src="/Tehnomart/delivery-icon.2cc476e3.png" alt="">
+                  </div>
                 </li>
+
               </ul>
 
             </div>
@@ -347,10 +375,10 @@
 
       </section>
 
-      <section class="main-companyInfo-container container">
+      <section class="main-companyInfo-container">
           <h2 hidden="">О компании</h2>
 
-          <div class="main-companyInfo">
+          <div class="main-companyInfo container">
 
             <div class="main-companyInfo-about">
                 <h3 class="simple-title">Компания «Техномарт»</h3>
@@ -373,9 +401,10 @@
             <div class="main-companyInfo-contacts">
                 <h3 class="simple-title">Контакты</h3>
                 <p>
-                  Вы можете забрать товар сами, заехав в наш офис:
+                  Вы можете забрать товар сами,<br>заехав в наш офис:
                 </p>
-                <img src="/Tehnomart/map.46e6bd6d.jpg" alt="">
+
+                <img src="/Tehnomart/map.46e6bd6d.jpg" width="300px" height="158px" alt="">
 
                 <a class="simple-link link-button" href="#">Заблудились? Напишите нам!</a>
             </div>
@@ -409,8 +438,10 @@
     <footer class="main-footer">
 
       <div class="top-footer container">
-        <a class="link-sbutton logo-button" href="/Tehnomart/index.html"><img src="/Tehnomart/logo.a787f247.svg" width="108px" height="18px" alt="логотип"></a>
-        <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>+7 800 555-86-28</p>
+        <div class="footer-logo-container">
+          <a class="link-button logo-button" href="/Tehnomart/index.html"><img src="/Tehnomart/logo.a787f247.svg" width="108px" height="18px" alt="логотип"></a>
+          <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>+7 800 555-86-28</p>
+        </div>
 
         <ul class="simple-list footer-site-navigation">
           <li class="footer-site-navigation-item"><a class="simple-link" href="#">Компания</a></li>
@@ -426,8 +457,9 @@
       </div>
 
       <div class="bottom-footer-container">
+
         <div class="bottom-footer container">
-          <p>© 2010–2021 Компания «Техномарт»<br>Все права защищены</p>
+          <div class="copyright"><p>© 2010–2021 Компания «Техномарт»<br>Все права защищены</p></div>
 
           <ul class="simple-list bottom-footer-social-networks-container">
             <li class="bottom-footer-social-networks-item"><a class="simple-link" href="#"><img src="/Tehnomart/vk-icon.bddd462a.svg" width="26px" height="15px" alt="вк"></a></li>
@@ -435,16 +467,20 @@
             <li class="bottom-footer-social-networks-item"><a class="simple-link" href="#"><img src="/Tehnomart/insta-icon.c257893f.svg" width="21px" height="21px" alt="инстаграмм"></a></li>
           </ul>
 
-          <div class="bottom-footer-feedback">
-              <p>Обратная свяь:</p>
-              <a class="simple-link" href="#">mail@htmlacademy.ru</a>
+          <div class="bottom-footer-feedback-container">
+            <div class="bottom-footer-feedback">
+                <p>Обратная свяь:</p>
+                <a class="simple-link" href="#">mail@htmlacademy.ru</a>
+            </div>
+
+            <div class="bottom-footer-developed">
+                <p>Разработано -</p>
+                <a class="simple-link" href="#">htmlacademy.ru</a>
+            </div>
           </div>
 
-          <div class="bottom-footer-developed">
-              <p>Разработано -</p>
-              <a class="simple-link" href="#">htmlacademy.ru</a>
-          </div>
         </div>
+
       </div>
 
     </footer>
