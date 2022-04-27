@@ -3,32 +3,43 @@
   <head>
     <meta charset="utf-8">
     <title>Форма обратной связи</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/normalize.1114379f.css">
+    <link rel="stylesheet" href="/style.78032849.css">
   </head>
   <body>
     <div class="feedback-container">
-      <div class="feedback">
-      <form action="#" method="post">
-        <div class="feedback-top">
-          <p>
-            <label for="userfio">Ваше имя:</label>
-            <input id="userfio" type="text" placeholder="Имя Фамилия">
-          </p>
+      <form class="feedback-form" action="#" method="post">
+        <div class="feedback-top-container">
+          <div class="feedback-top">
+            
+            <div class="feedback-fio">
+              <label for="userfio">Ваше имя:</label>
+              <input id="userfio" type="text" placeholder="Имя Фамилия">            
+            </div>
 
-          <p>
-            <label for="useremail">Ваш e-mail:</label>
-            <input id="useremail" type="text" placeholder="email@example.com">
-          </p>
+            <div class="feedback-mail">
+              <label for="useremail">Ваш e-mail:</label>
+              <input id="useremail" type="text" placeholder="email@example.com">            
+            </div>
 
-          <p>
-            <label for="usertext">Текст пиьма:</label>
-            <input id="usertext" type="text" placeholder="В свободной форме">
-          </p>
+            <div class="feedback-text">
+              <label for="usertext">Текст пиьма:</label>
+              <input id="usertext" type="text" placeholder="В свободной форме">            
+            </div>
+
+          </div>          
         </div>
-        <div class="fedback-bottom">
-          <button type="button">Отправить</button>          
+
+        <div class="feedback-bottom-container">
+          <div class="feedback-bottom">
+            <button type="button">Отправить</button>          
+          </div>          
         </div>
       </form>       
       </div>
-    </div>
+    
   </body>
 </html>
