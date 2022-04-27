@@ -1876,3 +1876,49 @@
 
   background-color: var(--basic-red);
 }
+
+.item-added-cart-container {
+  width: 620px;
+  min-height: 282px;
+
+  box-shadow: inset 0 7px 0 0 var(--basic-red),
+              0px 20px 40px rgba(0, 0, 0, 0.75);
+
+  background-color: var(--basic-white);
+}
+.item-added-cart-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 170px;
+}
+.item-added-cart-top label {
+  min-height: 30px;
+}
+.item-added-cart-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 112px;
+
+  background-color: #F1F1F1;
+}
+.item-added-cart-bottom button {
+  box-sizing: border-box;
+
+
+  border: none;
+  
+  width: 192px;
+  height: 38px;
+}
+.item-added-cart-checkout {
+  margin-right: 10px;
+
+  background-color: var(--basic-red);
+}
+.item-added-cart-continue {
+  background-color: var(--basic-white);
+}
