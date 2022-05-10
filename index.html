@@ -22,16 +22,17 @@
       <div class="headline-container">
 
         <div class="headline container">
+
           <a class="link-button logo-button" href="./index.html"><img src="img/share/header/logo.svg" width="108px" height="18px" alt="логотип"></a>
 
           <form class="search" action="#" method="get">
+            <input class="search-field" type="search" placeholder="Поиск:">
+
             <button type="submit" class="search-button">
               <svg class="search-icon" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" />
               </svg>
             </button>
-
-            <input class="search-field" type="text" placeholder="Поиск:">
           </form>
 
           <a class="simple-link bookmarks" href="#">
@@ -112,64 +113,77 @@
 
           <div class="main-catalog">
 
-              <div class="main-catalog-item main-catalog-materials new">
-                <p class="main-catalog-item-name">Материалы</p>
-                <a class="main-catalog-item-button" href="#">На любой вкус</a>
-                <img class="main-catalog-item-icon" src="img/index/main/catalog/materials-icon.svg" width="44px" height="65px" alt="">
+              <div class="main-catalog-item-container new">
+                <div class="main-catalog-item main-catalog-materials">
+                  <p class="main-catalog-item-name">Материалы</p>
+                  <a class="main-catalog-item-button" href="#">На любой вкус</a>
+                  <img class="main-catalog-item-icon" src="img/index/main/catalog/materials-icon.svg" width="44px" height="65px" alt="">
+                </div>
               </div>
 
-              <div class="main-catalog-item main-catalog-tools">
-                <p class="main-catalog-item-name">Инструмент</p>
-                <a class="main-catalog-item-button" href="#">На все случаи</a>
-                <img class="main-catalog-item-icon" src="img/index/main/catalog/tools-icon.svg" width="75px" height="61px" alt="">
+              <div class="main-catalog-item-container">
+                <div class="main-catalog-item main-catalog-tools">
+                  <p class="main-catalog-item-name">Инструмент</p>
+                  <a class="main-catalog-item-button" href="#">На все случаи</a>
+                  <img class="main-catalog-item-icon" src="img/index/main/catalog/tools-icon.svg" width="75px" height="61px" alt="">
+                </div>
               </div>
 
-              <div class="main-catalog-item main-catalog-technics">
-                <p class="main-catalog-item-name">Техника</p>
-                <a class="main-catalog-item-button" href="#">Для стройки</a>
-                <img class="main-catalog-item-icon" src="img/index/main/catalog/technics-icon.svg" width="78px" height="62px" alt="">
+              <div class="main-catalog-item-container">
+                <div class="main-catalog-item main-catalog-technics">
+                  <p class="main-catalog-item-name">Техника</p>
+                  <a class="main-catalog-item-button" href="#">Для стройки</a>
+                  <img class="main-catalog-item-icon" src="img/index/main/catalog/technics-icon.svg" width="78px" height="62px" alt="">
+                </div>
               </div>
 
-              <div class="main-catalog-bigItem">
-                <img class="main-catalog-bigItem-image-1" src="img/index/main/catalog/perforators.jpg" width="620px" height="266px" alt="Перфораторы">
-                <img hidden class="main-catalog-bigItem-image-2" src="img/index/main/catalog/drill.jpg" width="620px" height="266px" alt="Дрели">
-                
-                <div class="main-catalog-bigItem-content">
-                  
-                  <div class="main-catalog-bigItem-content-top">
-                    <p class="main-catalog-bigItem-title">Перфораторы</p>
-                    <p class="main-catalog-bigItem-slogan">Настоящие мужские игрушки</p>
-                  </div>
-                  
-                  <div class="main-catalog-bigItem-slider-container">
-                    <button type="button" class="main-catalog-bigItem-previousSlide"> <img src="img/share/icon-left.svg"> </button>
-                    <button type="button" class="main-catalog-bigItem-nextSlide"><img src="img/share/icon-right.svg"></button>
-                  </div>
-                  
-                  <div class="main-catalog-bigItem-content-bottom">
-                    <a class="link-button main-catalog-bigItem-button" href="Catalog.html">Открыть каталог</a>
-                    <button type="button" class="main-catalog-bigItem-previousButton"></button>
-                    <button type="button" class="main-catalog-bigItem-nextButton"></button>
-                  </div>
+              <div class="main-catalog-item-container">
+                <div class="main-catalog-bigItem">
+                  <img class="main-catalog-bigItem-image-1" src="img/index/main/catalog/perforators.jpg" width="620px" height="266px" alt="Перфораторы">
+                  <img hidden class="main-catalog-bigItem-image-2" src="img/index/main/catalog/drill.jpg" width="620px" height="266px" alt="Дрели">
 
+                  <div class="main-catalog-bigItem-content">
+
+                    <div class="main-catalog-bigItem-content-top">
+                      <p class="main-catalog-bigItem-title">Перфораторы</p>
+                      <p class="main-catalog-bigItem-slogan">Настоящие мужские игрушки</p>
+                    </div>
+
+                    <div class="main-catalog-bigItem-slider-container">
+                      <button type="button" class="main-catalog-bigItem-previousSlide"> <img src="img/share/icon-left.svg"> </button>
+                      <button type="button" class="main-catalog-bigItem-nextSlide"><img src="img/share/icon-right.svg"></button>
+                    </div>
+
+                    <div class="main-catalog-bigItem-content-bottom">
+                      <a class="link-button main-catalog-bigItem-button" href="Catalog.html">Открыть каталог</a>
+                      <button type="button" class="main-catalog-bigItem-previousButton"></button>
+                      <button type="button" class="main-catalog-bigItem-nextButton"></button>
+                    </div>
+
+                  </div>
                 </div>
               </div>
 
               <div class="main-right-catalog-items-container">
-                <div class="main-catalog-item main-catalog-discount">
-                  <p class="main-catalog-item-name">Скидки 50%</p>
-                  <a class="main-catalog-item-button" href="#">На 350 товаров</a>
-                  <img class="main-catalog-item-icon" src="img/index/main/catalog/discounts-icon.svg" width="59px" height="72px" alt="">
+                <div class="main-catalog-item-container">
+                  <div class="main-catalog-item main-catalog-discount">
+                    <p class="main-catalog-item-name">Скидки 50%</p>
+                    <a class="main-catalog-item-button" href="#">На 350 товаров</a>
+                    <img class="main-catalog-item-icon" src="img/index/main/catalog/discounts-icon.svg" width="59px" height="72px" alt="">
+                  </div>
                 </div>
 
-                <div class="main-catalog-item main-catalog-delivery">
-                  <p class="main-catalog-item-name">Доставка</p>
-                  <a class="main-catalog-item-button" href="#">Бесплатно</a>
-                  <img class="main-catalog-item-icon" src="img/index/main/catalog/delivery-icon.svg" width="78px" height="63px" alt="">
+                <div class="main-catalog-item-container">
+                  <div class="main-catalog-item main-catalog-delivery">
+                    <p class="main-catalog-item-name">Доставка</p>
+                    <a class="main-catalog-item-button" href="#">Бесплатно</a>
+                    <img class="main-catalog-item-icon" src="img/index/main/catalog/delivery-icon.svg" width="78px" height="63px" alt="">
+                  </div>
                 </div>
               </div>
 
           </div>
+
       </section>
 
       <section class="main-popularProducts-container container">
@@ -199,7 +213,7 @@
                       <button class="simple-button price-button">25500 Р.</button>
                     </a>
               </li>
-              <li class="products-item">
+              <li class="products-item new">
                     <a class="simple-link" href="#">
                       <div hidden class="products-item-cart">
                         <form method="post" action="#">
@@ -231,7 +245,7 @@
                       <button class="simple-button price-button">25500 Р.</button>
                     </a>
               </li>
-              <li class="products-item">
+              <li class="products-item new">
                     <a class="simple-link" href="#">
                       <div hidden class="products-item-cart">
                         <form method="post" action="#">
