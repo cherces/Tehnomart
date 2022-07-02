@@ -580,17 +580,16 @@
 }
 
 .main-catalog-bigItem {
-  position: relative;
-  display: flex;
-
   box-sizing: border-box;
 
   min-height: 266px;
 
   background-color: var(--basic-greylight);
 }
-.main-catalog-bigItem-image-1,
-.main-catalog-bigItem-image-2 {
+.main-catalog-bigItem-1 {
+  position: relative;
+}
+.main-catalog-bigItem-image {
   position: absolute;
 }
 .main-catalog-bigItem-content {
@@ -601,6 +600,7 @@
   box-sizing: border-box;
 
   width: 100%;
+  min-height: 266px;
 
   padding: 23px 25px 20px 20px;
 }
@@ -1514,26 +1514,91 @@
 
   margin-bottom: 10px;
 }
-.price-slider-container {
+.price-slider {
+  width: 220px;
+}
+.price-filter-range-controls {
+  position: relative;
+
+  height: 80px;
+
+  box-sizing: border-box;
+
   margin-bottom: 9px;
+  padding: 39px 20px;
+
+  border-radius: 5px;
 
   background-color: #F7F3EC;
 }
-.price-slider {
-  width: 180px;
+.price-filter-scale {
+  height: 2px;
 
-  margin: 39px 20px;
+  background-color: #C5C5C5;
 }
-.price-slider-start,
-.price-slider-end {
+.price-filter-bar {
+  width: 80%;
+  height: 2px;
+
+  background-color: var(--basic-green);
+}
+.price-filter-toggle {
+  position: absolute;
+  top: 29px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+
+  cursor: pointer;
+
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  background-color: #ABABAB;
+}
+.price-filter-toggle-min {
+  left: 18px;
+}
+.price-filter-toggle-max {
+  left: 160px;
+}
+.price-filter-input-controls {
+  display: flex;
+  justify-content: space-between;
+}
+.price-filter-input-controls input {
+  text-transform: uppercase;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 16px;
+
+  box-sizing: border-box;
+
   text-align: center;
 
   width: 95px;
-  height: 39px;
+  height: 38px;
+
+  padding: 10px;
 
   border: none;
+  border-radius: 5px;
 
   background-color: #F7F3EC;
+}
+.price-filter-input-controls-line::after {
+  content: "";
+  position: absolute;
+
+  width: 15px;
+  height: 2px;
+
+  margin-top: 16px;
+  margin-left: -7px;
+
+  background-color: #444444;
 }
 
 .manufacturer-filter {

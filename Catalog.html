@@ -147,14 +147,19 @@
 
               <fieldset class="price-filter">
                 <legend>Цена:</legend>
-
-                <div class="price-slider-container">
-                  <input class="price-slider" type="range" id="priceSlider" name="catalog-filter-priceSlaider" min="0" max="30000" step="100">
-                </div>
-                <div class="price-slider-input-container">
-                  <input class="price-slider-start" type="text" value="0">
-                  <span>—</span>
-                  <input class="price-slider-end" type="text" value="30000">
+                <div class="price-slaider">
+                  <div class="price-filter-range-controls">
+                    <div class="price-filter-scale">
+                      <div class="price-filter-bar"></div>
+                    </div>
+                    <div class="price-filter-toggle price-filter-toggle-min" tabindex="0"></div>
+                    <div class="price-filter-toggle price-filter-toggle-max" tabindex="0"></div>
+                  </div>
+                  <div class="price-filter-input-controls">
+                    <input type="number" name="minPrice" value="0">
+                    <span class="price-filter-input-controls-line"></span>
+                    <input type="number" name="maxPrice" value="30000">
+                  </div>
                 </div>
               </fieldset>
 
