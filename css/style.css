@@ -579,7 +579,7 @@
   left: 191px;
 }
 
-.main-catalog-bigItem {
+.main-catalog-bigItems-container {
   box-sizing: border-box;
 
   min-height: 266px;
@@ -588,6 +588,12 @@
 }
 .main-catalog-bigItem-1 {
   position: relative;
+}
+.main-catalog-bigItem {
+  display: none;
+}
+.main-catalog-bigItem-current {
+  display: block;
 }
 .main-catalog-bigItem-image {
   position: absolute;
@@ -636,24 +642,7 @@
   display: flex;
   justify-content: space-between;
 }
-.main-catalog-bigItem-previousSlide {
-  font: inherit;
-
-  width: 22px;
-  height: 40px;
-
-  border: none;
-
-  margin: 0;
-  padding: 0;
-
-  z-index: 1;
-
-  cursor: pointer;
-
-  color: inherit;
-  background-color: transparent;
-}
+.main-catalog-bigItem-previousSlide,
 .main-catalog-bigItem-nextSlide {
   font: inherit;
 
@@ -693,7 +682,7 @@
   color: var(--basic-white);
   background-color: var(--basic-red);
 }
-.main-catalog-bigItem-previousButton {
+.main-catalog-bigItem-sliderButton {
   width: 10px;
   height: 10px;
 
@@ -707,24 +696,9 @@
   z-index: 1;
 
   cursor: pointer;
-
-  background-color: var(--basic-red);
 }
-.main-catalog-bigItem-nextButton {
-  width: 10px;
-  height: 10px;
-
-  margin: 0;
-  padding: 0;
-
-  border: 2px solid var(--basic-white);
-  border-radius: 50%;
-
-  z-index: 1;
-
-  cursor: pointer;
-
-  background-color: var(--basic-white);
+.main-catalog-bigItem-sliderButton-current {
+  background-color: var(--basic-red);
 }
 
 .main-catalog-item-button:hover {
