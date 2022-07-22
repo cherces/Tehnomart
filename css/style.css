@@ -597,6 +597,8 @@
 }
 .main-catalog-bigItem-image {
   position: absolute;
+
+  object-fit: contain;
 }
 .main-catalog-bigItem-content {
   display: flex;
@@ -787,7 +789,7 @@
   margin-bottom: 5px;
 }
 .products-item-image {
-
+  object-fit: contain;
 }
 .products-item-name {
   font-family: "PT Sans";
@@ -977,6 +979,9 @@
   margin-bottom: 20px;
 
   border: 1px solid #EAEAEA;
+}
+.main-popularManufactures-logo {
+  object-fit: contain;
 }
 
 .main-popularManufactures-item:nth-child(4n) {
